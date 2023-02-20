@@ -1,4 +1,4 @@
- const gFecht = [
+const gFecht = [
     {
         id:1,
         categoria: "procesador",
@@ -10,7 +10,7 @@
     },
     {
         id:2,
-        category: "Video",
+        categoria: "Video",
         product_name: "Placa De Video Geforce Rtx 2080",
         description: "asfasdfadsfadsf",
         price: 350,
@@ -28,16 +28,14 @@
     }
 ]
 
-export default gFecht;
 
 export const traerProductos = () => new Promise ( (res, rej)=> {
     let condition = true
     if (condition) {
         setTimeout(()=>{
-            res(traerProductos)
+            res(gFecht)
         }, 2000)
     } else{
         rej('todo mal')
     }
 })
-
