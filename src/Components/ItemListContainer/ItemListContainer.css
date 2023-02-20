@@ -1,0 +1,116 @@
+:root{
+    --roboto:'Roboto';
+    --cursive_font:'Satisfy';
+    --round:'Varela Round';
+    --cta:#fe8033;
+    --bg:#272b34;
+    --light_bg:#2b3039;
+    --text:#2d343e;
+    --white:#fff;
+  }
+.main_content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 50px auto;
+    padding: 50px 0 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform: (.8);
+    transition: all .3s ease-in-out;
+    margin-bottom: 50px;
+}
+.card_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vw;
+    width: 283px;
+    height: 200px;
+}
+
+img{
+    width: 200px;
+    background-size: cover;
+    
+}
+
+.card_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    margin: 25px 0;
+    height: 200px;
+}
+
+.card_header h2{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b0a99f;
+    font-weight: 400;
+    font-family: Source Sans Pro;
+}
+
+.card_header p{
+    font-size: 14px;
+    text-align: center;
+    color: var(--white);
+    margin: 8px 0;
+}
+
+.card_header .price{
+    font-size: 28px;
+    color: #c1bcb4;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+span{
+    font-size: 15px;
+    color: var(--white);
+}
+
+.card:hover{
+    background-color: var(--light_bg);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card .btn:hover{
+    background-color: #01f603;
+    opacity: 0.9;
+    color: var(--white);
+}
+
+.btn{
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 35px;
+    background-color: var(--light_bg);
+    color: rgba(#fff .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition:background-color .3s ease;
+    overflow: hidden;
+}
